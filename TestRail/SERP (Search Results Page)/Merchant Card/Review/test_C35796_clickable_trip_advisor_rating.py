@@ -29,8 +29,12 @@ def trip_advisor():
     ratings_and_reviews_container = My.search_presence_webelement(driver, By.ID, "ypgReviewsHeader")
     assert ratings_and_reviews_container
 
-    review_details = My.search_visibility_webelement(ratings_and_reviews_container, By.ID, "reviewDetails_ta")
+    review_details = My.search_clickable_webelement(
+        ratings_and_reviews_container, By.CSS_SELECTOR, "#reviewPreview > nav > ul "
+                                              "> li.hide-print.reviews-tabs--item.reviews-tabs--ta.reviewTab_ta "
+                                              "> a")
     assert review_details
+    review_details.click()
 
 
 def test_trip_advisor():
