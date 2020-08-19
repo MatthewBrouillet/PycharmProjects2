@@ -5,10 +5,15 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
+# Chromedriver paths
+PATH = "C:\\Users\\mbroui01\\Downloads\\chromedriver_win32 (v76)\\chromedriver.exe"
+
+
 # URLs
 global yp_web_link, qa_web_link, pj_web_link, c411_web_link, c411_fr_web_link, c411_qa_web_link, c411_fr_qa_web_link, \
-    corporate_web_link, sit_web_link, entreprise_web_link, canpages_web_link, canpages_fr_web_link
+    corporate_web_link, sit_web_link, entreprise_web_link, canpages_web_link, canpages_fr_web_link, qa_fr_web_link
 qa_web_link = "https://qa-ui-mtl.yellowpages.ca"
+qa_fr_web_link = "https://www.qa-ui-mtl.pagesjaunes.ca"
 yp_web_link = "https://www.yellowpages.ca"
 pj_web_link = "https://www.pagesjaunes.ca"
 c411_web_link = "https://www.canada411.ca"
