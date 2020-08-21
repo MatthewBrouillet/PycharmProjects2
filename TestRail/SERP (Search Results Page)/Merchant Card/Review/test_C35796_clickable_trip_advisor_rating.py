@@ -16,7 +16,7 @@ def trip_advisor():
     assert search_results
 
     # Locating the first merchant card
-    first_merchant_card = My.search_presence_webelement(search_results, By.XPATH, "//div//div//div//div//div")
+    first_merchant_card = My.search_presence_webelement(search_results, By.CLASS_NAME, "listing__content__wrapper")
     assert first_merchant_card
 
     # Locating the trip advisor rating of the merchant
