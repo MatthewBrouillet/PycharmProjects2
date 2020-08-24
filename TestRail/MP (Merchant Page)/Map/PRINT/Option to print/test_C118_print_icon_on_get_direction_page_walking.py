@@ -16,11 +16,15 @@ def print_option_walking():
     assert current_location_button
     current_location_button.click()
 
+    driver.implicitly_wait(5)
+
     # Locating the Walking button
     walking_button = My.search_clickable_webelement(
         driver, By.XPATH, "//*[@id='DRIVING']/form/div[1]/ul/li[2]/a")
     assert walking_button
     walking_button.click()
+
+    driver.implicitly_wait(5)
 
     # Locating the print button
     print_button = My.search_clickable_webelement(

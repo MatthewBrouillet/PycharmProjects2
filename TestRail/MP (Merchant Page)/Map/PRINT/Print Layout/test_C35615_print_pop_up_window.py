@@ -15,10 +15,11 @@ def print_popup():
     assert current_location_button
     current_location_button.click()
 
+    driver.implicitly_wait(5)
+
     print_button = My.search_clickable_webelement(
         driver, By.XPATH, "//*[@id='DRIVING']/div/div[5]/button")
     assert print_button
-    print_button.click()
 
 
 def test_print_popup():

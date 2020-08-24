@@ -21,9 +21,13 @@ def trip_advisor():
 
     # Locating the trip advisor rating of the merchant
     rating_stars = My.search_clickable_webelement(
-        first_merchant_card, By.XPATH, "//div//div//div[2]//div//div[2]//div//div//div[2]//a")
-    assert rating_stars
-    rating_stars.click()
+        first_merchant_card, By.XPATH, "//*[@id='ypgBody']/div[2]/div/div[1]/div[9]/div[1]/div[2]/div"
+        "/div/div/div[2]/div[1]/div[2]/div[1]/div/div[2]/a/img")
+    if rating_stars:
+        assert rating_stars
+        rating_stars.click()
+    else:
+        print("This merchant card does not have a trip advisor review")
 
     # Locating the Ratings and Review container
     ratings_and_reviews_container = My.search_presence_webelement(driver, By.ID, "ypgReviewsHeader")

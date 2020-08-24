@@ -13,6 +13,8 @@ def merchant_card_yellow_widgets():
     global successful_search
     successful_search = []
 
+    driver.implicitly_wait(5)
+
     # Locating the first merchant card
     first_merchant_card = My.search_presence_webelement(driver, By.CLASS_NAME, "listing__content__wrapper")
     assert first_merchant_card
@@ -32,6 +34,7 @@ def merchant_card_yellow_widgets():
             assert len(successful_search) > 0
         else:
             return
+
 
 def testing_merchant_card_yellow_widgets():
     """

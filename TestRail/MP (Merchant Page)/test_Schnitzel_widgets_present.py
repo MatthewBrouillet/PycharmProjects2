@@ -10,6 +10,7 @@ def test_widgets():
     """
     >> This function verifies the widgets are present on the merchant page.
     """
+    driver.implicitly_wait(5)
     # Locating the container
     container = My.search_presence_webelements(
         driver, By.XPATH, "//*[@id='ypgBody']/div[3]/div/div[1]/div[2]/div[1]/div[2]/div[1]/div/ul/li")
@@ -28,6 +29,6 @@ def testing_test_widgets():
     """
     >> This function executes the steps of the test case
     """
-    My.search_merchant_page(driver, My.qa_web_link + "/bus/r/Ontario/Toronto/Schnitzel-Hub-European-Bistro/7119328")
+    My.search_merchant_page(driver, My.qa_web_link + "/bus/r/Ontario/Toronto/Schnitzel-Hub-European-Bistro/7119328.html")
     test_widgets()
     driver.quit()
