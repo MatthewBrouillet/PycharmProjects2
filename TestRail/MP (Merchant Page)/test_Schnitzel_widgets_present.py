@@ -25,7 +25,7 @@ def test_widgets():
                    or "Send Message" or "Directions" or widget.text == "Website"
 
 
-def testing_test_widgets():
+def testing_test_schnitzel_widgets():
     """
     >> This function executes the steps of the test case
     """

@@ -15,6 +15,8 @@ def trip_advisor():
     search_results = My.search_presence_webelement(driver, By.CLASS_NAME, "page__container_wrap")
     assert search_results
 
+    driver.implicitly_wait(5)
+
     # Locating the first merchant card
     first_merchant_card = My.search_presence_webelement(search_results, By.CLASS_NAME, "listing__content__wrapper")
     assert first_merchant_card
@@ -28,6 +30,9 @@ def trip_advisor():
         rating_stars.click()
     else:
         print("This merchant card does not have a trip advisor review")
+        return
+
+    driver.implicitly_wait(5)
 
     # Locating the Ratings and Review container
     ratings_and_reviews_container = My.search_presence_webelement(driver, By.ID, "ypgReviewsHeader")
@@ -46,8 +51,5 @@ def test_trip_advisor():
     >> This function executes the steps of the test case
     """
     My.search_merchant_page(driver, My.qa_web_link + "/search/si/1/Restaurants/Montreal+QC")
-    trip_advisor()
-    print('----------')
-    My.search_merchant_page(driver, My.qa_fr_web_link + "/search/si/1/Restaurants/Montreal+QC")
     trip_advisor()
     driver.quit()

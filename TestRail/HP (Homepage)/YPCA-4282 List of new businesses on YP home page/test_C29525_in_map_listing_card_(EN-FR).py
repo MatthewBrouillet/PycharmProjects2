@@ -19,6 +19,8 @@ def in_map_listing_card():
         map_results, By.XPATH, "//*[@id='ypgBody']/div[2]/div[3]/div[2]/div[2]/div")
     assert merchant_card
 
+    driver.implicitly_wait(5)
+
     # Locating link to merchant page
     link_to_merchant_page = My.search_clickable_webelement(
         merchant_card, By.XPATH,

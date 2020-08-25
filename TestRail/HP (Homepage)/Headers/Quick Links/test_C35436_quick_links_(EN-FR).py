@@ -14,6 +14,8 @@ def quick_links(link):
     count = 1
     while count < 6:
 
+        driver.implicitly_wait(5)
+
         # Locating the toggle
         quick_link = My.search_clickable_webelement(
             driver, By.XPATH, "//*[@id='ypgBody']/div[1]/div[2]/div/div[1]/div/div[2]/ul/li[" + str(count) + "]/a")
