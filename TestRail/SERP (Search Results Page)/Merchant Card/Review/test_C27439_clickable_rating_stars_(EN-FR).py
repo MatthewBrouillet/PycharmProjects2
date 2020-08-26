@@ -17,6 +17,8 @@ def review_stars():
     search_results = My.search_presence_webelement(driver, By.CLASS_NAME, "page__container_wrap")
     assert search_results
 
+    driver.implicitly_wait(5)
+
     # Locating the first merchant card
     first_merchant_card = My.search_presence_webelement(search_results, By.XPATH, "//div//div//div//div//div")
     assert first_merchant_card
@@ -24,10 +26,14 @@ def review_stars():
     # Locating the rating stars of the merchant
     rating_stars = My.search_clickable_webelement(
         first_merchant_card, By.XPATH, "//div//div//div[2]//div//div[2]//div//div//div//a")
-    assert rating_stars
-    rating_stars.click()
+    if rating_stars:
+        assert rating_stars
+        rating_stars.click()
+    else:
+        print("This merchant card does not have a trip advisor review")
+        return
 
-    time.sleep(5)
+    driver.implicitly_wait(5)
 
     # Locating the Ratings and Review container
     ratings_and_reviews_container = My.search_presence_webelement(driver, By.ID, "ypgReviewsHeader")

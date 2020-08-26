@@ -43,11 +43,15 @@ def print_option_biking():
     assert current_location_button
     current_location_button.click()
 
+    driver.implicitly_wait(5)
+
     # Locating the Biking button
     biking_button = My.search_clickable_webelement(
         driver, By.XPATH, "//*[@id='DRIVING']/form/div[1]/ul/li[3]/a")
     assert biking_button
     biking_button.click()
+
+    driver.implicitly_wait(5)
 
     # Locating the print button
     print_button = My.search_clickable_webelement(

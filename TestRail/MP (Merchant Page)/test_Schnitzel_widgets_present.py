@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome(My.PATH)
 
 
-def test_widgets():
+def widgets():
     """
     >> This function verifies the widgets are present on the merchant page.
     """
@@ -25,10 +25,10 @@ def test_widgets():
                    or "Send Message" or "Directions" or widget.text == "Website"
 
 
-def testing_test_schnitzel_widgets():
+def testing_schnitzel_widgets():
     """
     >> This function executes the steps of the test case
     """
     My.search_merchant_page(driver, My.qa_web_link + "/bus/r/Ontario/Toronto/Schnitzel-Hub-European-Bistro/7119328.html")
-    test_widgets()
+    widgets()
     driver.quit()

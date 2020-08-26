@@ -35,6 +35,8 @@ def print_option_driving():
     assert current_location_button
     current_location_button.click()
 
+    driver.implicitly_wait(5)
+
     # Locating the print button
     print_button = My.search_clickable_webelement(
         driver, By.XPATH, "//*[@id='DRIVING']/div/div[5]/button")
