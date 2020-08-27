@@ -41,7 +41,7 @@ def clear_previous_searches(link):
     # Clearing all the previous searches
     clear_message = My.search_presence_webelement(driver, By.XPATH, "//*[@id='previousLocation']/p")
 
-    if link == My.qa_web_link:
+    if link == My.Testing_Env_EN:
         assert clear_message and clear_message.get_attribute("textContent") == "Your recent locations have been cleared"
     else:
         assert clear_message and clear_message.get_attribute("textContent") == \
@@ -52,11 +52,11 @@ def testing_clear_previous_searches():
     """
     >> This function executes the steps of the test case
     """
-    link = My.qa_web_link
+    link = My.Testing_Env_EN
     My.search_merchant_page(driver, link)
     clear_previous_searches(link)
     print('----------')
-    link = My.qa_fr_web_link
+    link = My.Testing_Env_FR
     My.search_merchant_page(driver, link)
     clear_previous_searches(link)
     driver.quit()

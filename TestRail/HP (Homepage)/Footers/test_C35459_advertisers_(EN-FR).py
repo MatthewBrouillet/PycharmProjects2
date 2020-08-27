@@ -42,13 +42,14 @@ def quick_links_advertisers():
         window_before = driver.window_handles[0]
         driver.switch_to.window(window_before)
 
+
 def testing_quick_links_advertisers():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    My.search_merchant_page(driver, My.qa_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_EN)
     quick_links_advertisers()
     print('----------')
-    My.search_merchant_page(driver, My.qa_fr_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_FR)
     quick_links_advertisers()
     driver.quit()

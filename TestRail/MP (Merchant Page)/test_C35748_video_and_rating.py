@@ -30,6 +30,6 @@ def testing_has_video_rating():
     """
     >> This function executes the steps of the test case
     """
-    My.search_merchant_page(driver, My.qa_web_link + "/bus/Alberta/Edmonton/Action-Moving-Storage/8076228.html")
+    My.search_merchant_page(driver, My.Testing_Env_EN + "/bus/Alberta/Edmonton/Action-Moving-Storage/8076228.html")
     has_video_rating()
     driver.quit()

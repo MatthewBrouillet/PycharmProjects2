@@ -35,9 +35,9 @@ def test_has_displayed_map_and_businesses():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    My.search_merchant_page(driver, My.qa_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_EN)
     has_displayed_map_and_businesses()
     print('----------')
-    My.search_merchant_page(driver, My.qa_fr_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_FR)
     has_displayed_map_and_businesses()
     driver.quit()

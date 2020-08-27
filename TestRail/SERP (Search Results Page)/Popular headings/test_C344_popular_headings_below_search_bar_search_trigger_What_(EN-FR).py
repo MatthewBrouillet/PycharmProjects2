@@ -20,34 +20,34 @@ def popular_headings(link):
         heading_link.click()
 
         if count == 1:
-            if link[0:32] == My.qa_web_link:
-                assert driver.current_url == My.qa_web_link + '/search/si/1/Restaurants/Montreal+QC'
+            if link[0:32] == My.Testing_Env_EN:
+                assert driver.current_url == My.Testing_Env_EN + '/search/si/1/Restaurants/Montreal+QC'
             else:
-                assert driver.current_url == My.qa_fr_web_link + '/search/si/1/Restaurants/Montreal+QC'
+                assert driver.current_url == My.Testing_Env_FR + '/search/si/1/Restaurants/Montreal+QC'
 
         if count == 2:
-            if link[0:32] == My.qa_web_link:
-                assert driver.current_url == My.qa_web_link + '/search/si/1/Dentists/Montreal+QC'
+            if link[0:32] == My.Testing_Env_EN:
+                assert driver.current_url == My.Testing_Env_EN + '/search/si/1/Dentists/Montreal+QC'
             else:
-                assert driver.current_url == My.qa_fr_web_link + '/search/si/1/Dentistes/Montreal+QC'
+                assert driver.current_url == My.Testing_Env_FR + '/search/si/1/Dentistes/Montreal+QC'
 
         if count == 3:
-            if link[0:32] == My.qa_web_link:
-                assert driver.current_url == My.qa_web_link + '/search/si/1/Medical+Clinics/Montreal+QC'
+            if link[0:32] == My.Testing_Env_EN:
+                assert driver.current_url == My.Testing_Env_EN + '/search/si/1/Medical+Clinics/Montreal+QC'
             else:
-                assert driver.current_url == My.qa_fr_web_link + '/search/si/1/Cliniques+medicales/Montreal+QC'
+                assert driver.current_url == My.Testing_Env_FR + '/search/si/1/Cliniques+medicales/Montreal+QC'
 
         if count == 4:
-            if link[0:32] == My.qa_web_link:
-                assert driver.current_url == My.qa_web_link + '/search/si/1/Car+Repair/Montreal+QC'
+            if link[0:32] == My.Testing_Env_EN:
+                assert driver.current_url == My.Testing_Env_EN + '/search/si/1/Car+Repair/Montreal+QC'
             else:
-                assert driver.current_url == My.qa_fr_web_link + '/search/si/1/Reparation+de+voitures/Montreal+QC'
+                assert driver.current_url == My.Testing_Env_FR + '/search/si/1/Reparation+de+voitures/Montreal+QC'
 
         if count == 5:
-            if link[0:32] == My.qa_web_link:
-                assert driver.current_url == My.qa_web_link + '/search/si/1/Grocery+Stores/Montreal+QC'
+            if link[0:32] == My.Testing_Env_EN:
+                assert driver.current_url == My.Testing_Env_EN + '/search/si/1/Grocery+Stores/Montreal+QC'
             else:
-                assert driver.current_url == My.qa_fr_web_link + '/search/si/1/Epiceries/Montreal+QC'
+                assert driver.current_url == My.Testing_Env_FR + '/search/si/1/Epiceries/Montreal+QC'
 
         count += 1
 
@@ -56,11 +56,11 @@ def test_popular_headings():
     """
     >> This function executes the steps of the test case
     """
-    link = My.qa_web_link + "/search/si/1/restaurants/Montreal+QC"
+    link = My.Testing_Env_EN + "/search/si/1/restaurants/Montreal+QC"
     My.search_merchant_page(driver, link)
     popular_headings(link)
     print('----------')
-    link = My.qa_fr_web_link + "/search/si/1/restaurants/Montreal+QC"
+    link = My.Testing_Env_FR + "/search/si/1/restaurants/Montreal+QC"
     My.search_merchant_page(driver, link)
     popular_headings(link)
     driver.quit()

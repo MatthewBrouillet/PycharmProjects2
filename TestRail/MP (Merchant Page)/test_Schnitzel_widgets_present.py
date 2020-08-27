@@ -29,6 +29,6 @@ def testing_schnitzel_widgets():
     """
     >> This function executes the steps of the test case
     """
-    My.search_merchant_page(driver, My.qa_web_link + "/bus/r/Ontario/Toronto/Schnitzel-Hub-European-Bistro/7119328.html")
+    My.search_merchant_page(driver, My.Testing_Env_EN + "/bus/r/Ontario/Toronto/Schnitzel-Hub-European-Bistro/7119328.html")
     widgets()
     driver.quit()

@@ -18,7 +18,7 @@ def validate_ad_with_us(link):
     button_ad_with_us.click()
 
     # Switching to the new window
-    if link == My.qa_web_link:
+    if link == My.Testing_Env_EN:
         window_after = driver.window_handles[1]
         driver.switch_to.window(window_after)
     else:
@@ -34,11 +34,11 @@ def test_ad_with_us():
     """
     >> This function executes the steps of the test case
     """
-    link = My.qa_web_link
+    link = My.Testing_Env_EN
     My.search_merchant_page(driver, link)
     validate_ad_with_us(link)
     print('----------')
-    link = My.qa_fr_web_link
+    link = My.Testing_Env_FR
     My.search_merchant_page(driver, link)
     validate_ad_with_us(link)
     driver.quit()

@@ -30,9 +30,9 @@ def test_mediative_toggle():
     >> This function executes the steps of the test case
     """
     link = My.yp_web_link
-    My.search_merchant_page(driver, My.qa_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_EN)
     mediative_toggle(link)
     print('----------')
-    My.search_merchant_page(driver, My.qa_fr_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_FR)
     mediative_toggle(link)
     driver.quit()

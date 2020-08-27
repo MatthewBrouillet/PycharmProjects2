@@ -26,7 +26,7 @@ def testing_unsubscribe():
     """
     >> This function executes the steps of the test case
     """
-    My.search_merchant_page(driver, My.qa_web_link + \
+    My.search_merchant_page(driver, My.Testing_Env_EN + \
            "/unsubscribeReviewNotification?mid=2735583&merchantEmail=rita.elsalfiti@pj.ca&verification" \
            "Code=e4d16df8-ba85-4386-8847-ed757e83fb35")
     unsubscribe()

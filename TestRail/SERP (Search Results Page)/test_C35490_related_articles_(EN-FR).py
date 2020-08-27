@@ -26,9 +26,9 @@ def testing_related_articles():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    My.search_merchant_page(driver, My.qa_web_link + '/search/si/1/restaurants/Montreal+QC')
+    My.search_merchant_page(driver, My.Testing_Env_EN + '/search/si/1/restaurants/Montreal+QC')
     related_articles()
     print('----------')
-    My.search_merchant_page(driver, My.qa_fr_web_link + '/search/si/1/restaurants/Montreal+QC')
+    My.search_merchant_page(driver, My.Testing_Env_FR + '/search/si/1/restaurants/Montreal+QC')
     related_articles()
     driver.quit()

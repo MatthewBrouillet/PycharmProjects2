@@ -27,7 +27,7 @@ def tips_ideas_dine_view_more(link):
     view_more_link.click()
 
     # Validating the URL of the current web page
-    if link == My.qa_web_link:
+    if link == My.Testing_Env_EN:
         url = driver.current_url[0:38]
         assert link + "/dine/" in url
     else:
@@ -39,11 +39,11 @@ def test_tips_ideas_dine_view_more():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    link = My.qa_web_link
+    link = My.Testing_Env_EN
     My.search_merchant_page(driver, link)
     tips_ideas_dine_view_more(link)
     print('----------')
-    link = My.qa_fr_web_link
+    link = My.Testing_Env_FR
     My.search_merchant_page(driver, link)
     tips_ideas_dine_view_more(link)
     driver.quit()

@@ -50,6 +50,6 @@ def test_trip_advisor():
     """
     >> This function executes the steps of the test case
     """
-    My.search_merchant_page(driver, My.qa_web_link + "/search/si/1/Restaurants/Montreal+QC")
+    My.search_merchant_page(driver, My.Testing_Env_EN + "/search/si/1/Restaurants/Montreal+QC")
     trip_advisor()
     driver.quit()

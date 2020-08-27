@@ -22,9 +22,9 @@ def testing_estimated_travel_time():
     """
     >> This function executes the steps of the test case
     """
-    My.search_merchant_page(driver, My.qa_web_link + "/bus/Quebec/Montreal/Chalet-Bar-B-Q/3391918.html")
+    My.search_merchant_page(driver, My.Testing_Env_EN + "/bus/Quebec/Montreal/Chalet-Bar-B-Q/3391918.html")
     estimated_travel_time()
     print('----------')
-    My.search_merchant_page(driver, My.qa_fr_web_link + "/bus/Quebec/Montreal/Chalet-Bar-B-Q/3391918.html")
+    My.search_merchant_page(driver, My.Testing_Env_FR + "/bus/Quebec/Montreal/Chalet-Bar-B-Q/3391918.html")
     estimated_travel_time()
     driver.quit()

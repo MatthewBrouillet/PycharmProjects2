@@ -33,9 +33,9 @@ def test_in_map_listing_card():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    My.search_merchant_page(driver, My.qa_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_EN)
     in_map_listing_card()
     print('----------')
-    My.search_merchant_page(driver, My.qa_fr_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_FR)
     in_map_listing_card()
     driver.quit()

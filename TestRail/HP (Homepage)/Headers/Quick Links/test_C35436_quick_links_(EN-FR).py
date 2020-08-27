@@ -29,28 +29,28 @@ def quick_links(link):
 
         elif count == 2:
             url = driver.current_url
-            if link == My.qa_web_link:
+            if link == My.Testing_Env_EN:
                 assert link + "/search/si/1/Dentists/Montreal+QC" in url
             else:
                 assert link + "/search/si/1/Dentistes/Montreal+QC" in url
 
         elif count == 3:
             url = driver.current_url
-            if link == My.qa_web_link:
+            if link == My.Testing_Env_EN:
                 assert link + "/search/si/1/Medical+Clinics/Montreal+QC" in url
             else:
                 assert link + "/search/si/1/Cliniques+medicales/Montreal+QC" in url
 
         elif count == 4:
             url = driver.current_url
-            if link == My.qa_web_link:
+            if link == My.Testing_Env_EN:
                 assert link + "/search/si/1/Car+Repair/Montreal+QC" in url
             else:
                 assert link + "/search/si/1/Reparation+de+voitures/Montreal+QC" in url
 
         else:
             url = driver.current_url
-            if link == My.qa_web_link:
+            if link == My.Testing_Env_EN:
                 assert link + "/search/si/1/Grocery+Stores/Montreal+QC" in url
             else:
                 assert link + "/search/si/1/Epiceries/Montreal+QC" in url
@@ -63,11 +63,11 @@ def test_quick_links():
     """
     >> This function executes the steps of the test case
     """
-    link = My.qa_web_link
+    link = My.Testing_Env_EN
     My.search_merchant_page(driver, link)
     quick_links(link)
     print('----------')
-    link = My.qa_fr_web_link
+    link = My.Testing_Env_FR
     My.search_merchant_page(driver, link)
     quick_links(link)
     driver.quit()

@@ -28,6 +28,6 @@ def testing_merchant_logo():
     """
     >> This function executes the steps of the test case
     """
-    My.search_merchant_page(driver, My.qa_web_link + "/bus/Quebec/Montreal/Reuben-s-Deli-and-Steakhouse/2499353.html")
+    My.search_merchant_page(driver, My.Testing_Env_EN + "/bus/Quebec/Montreal/Reuben-s-Deli-and-Steakhouse/2499353.html")
     merchant_logo()
     driver.quit()

@@ -25,6 +25,6 @@ def testing_has_editors_pick():
     """
     >> This function executes the steps of the test case
     """
-    My.search_merchant_page(driver, My.qa_web_link + "/bus/Quebec/Montreal/Chalet-Bar-B-Q/3391918")
+    My.search_merchant_page(driver, My.Testing_Env_EN + "/bus/Quebec/Montreal/Chalet-Bar-B-Q/3391918")
     has_editors_pick()
     driver.quit()

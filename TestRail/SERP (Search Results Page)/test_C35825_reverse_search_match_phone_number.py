@@ -54,6 +54,6 @@ def testing_phone_numbers():
     """
     >> This function will execute the test case, and takes a link, a phone number and a location as parameters
     """
-    My.search_merchant_param(driver, My.qa_web_link, "5148482424", "Toronto")
+    My.search_merchant_param(driver, My.Testing_Env_EN, "5148482424", "Toronto")
     is_valid_search()
     driver.quit()

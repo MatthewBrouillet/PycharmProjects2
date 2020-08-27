@@ -11,18 +11,56 @@ PATH = "C:\\Users\\mbroui01\\Downloads\\chromedriver_win32 (v76)\\chromedriver.e
 
 # URLs
 global yp_web_link, qa_web_link, pj_web_link, c411_web_link, c411_fr_web_link, c411_qa_web_link, c411_fr_qa_web_link, \
-    corporate_web_link, sit_web_link, entreprise_web_link, canpages_web_link, canpages_fr_web_link, qa_fr_web_link
+    corporate_web_link, sit_web_link, entreprise_web_link, canpages_web_link, canpages_fr_web_link, qa_fr_web_link, \
+    Testing_Env_EN, Testing_Env_FR
+
+"""
+>> TESTING ENV **
+"""
+
+Testing_Env_EN = "https://qa-ui-mtl.yellowpages.ca"
+Testing_Env_FR = "https://www.qa-ui-mtl.pagesjaunes.ca"
+
+"""
+>> QA ENV
+"""
+
 qa_web_link = "https://qa-ui-mtl.yellowpages.ca"
 qa_fr_web_link = "https://www.qa-ui-mtl.pagesjaunes.ca"
-yp_web_link = "https://www.yellowpages.ca"
-pj_web_link = "https://www.pagesjaunes.ca"
-c411_web_link = "https://www.canada411.ca"
-c411_fr_web_link = "https://www.fr.canada411.ca"
 c411_qa_web_link = "https://www.qa.ui.mtl.canada411.ca/"
 c411_fr_qa_web_link = 'http://www.fr.qa.ui.mtl.canada411.ca/'
+
+"""
+>> YP ENV
+"""
+
+yp_web_link = "https://www.yellowpages.ca"
+pj_web_link = "https://www.pagesjaunes.ca"
+
+"""
+>> CANADA411 ENV
+"""
+
+c411_web_link = "https://www.canada411.ca"
+c411_fr_web_link = "https://www.fr.canada411.ca"
+
+"""
+>> SIT ENV
+"""
+
 sit_web_link = "http://ypgldcypui-sit01.itops.ad.ypg.com/"
+
+"""
+>> YP BUSINESS
+"""
+
 corporate_web_link = "https://corporate.yp.ca/en/"
 entreprise_web_link = "https://entreprise.pj.ca/fr/"
+
+"""
+>> CANPAGES ENV
+"""
+
 canpages_web_link = "https://www.canpages.ca/"
 canpages_fr_web_link = "https://www.canpages.ca/fr/"
 

@@ -29,9 +29,9 @@ def test_yp_app_app_store_link():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    My.search_merchant_page(driver, My.qa_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_EN)
     yp_app_app_store_link()
     print('----------')
-    My.search_merchant_page(driver, My.qa_fr_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_FR)
     yp_app_app_store_link()
     driver.quit()

@@ -26,6 +26,6 @@ def test_print_popup():
     """
     >> This function executes the steps of the test case
     """
-    My.search_merchant_page(driver, My.qa_web_link + "/merchant/directions/1329952")
+    My.search_merchant_page(driver, My.Testing_Env_EN + "/merchant/directions/1329952")
     print_popup()
     driver.quit()

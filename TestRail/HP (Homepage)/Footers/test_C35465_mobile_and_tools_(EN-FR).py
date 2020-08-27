@@ -52,15 +52,16 @@ def mobile_and_tools(link):
         count += 1
         driver.back()
 
+
 def testing_mobile_and_tools():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    link = My.qa_web_link
+    link = My.Testing_Env_EN
     My.search_merchant_page(driver, link)
     mobile_and_tools(link)
     print('----------')
-    link = My.qa_fr_web_link
+    link = My.Testing_Env_FR
     My.search_merchant_page(driver, link)
     mobile_and_tools(link)
     driver.quit()

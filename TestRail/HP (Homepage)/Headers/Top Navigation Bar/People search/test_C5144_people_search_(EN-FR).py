@@ -19,7 +19,7 @@ def validate_people_search(link):
 
     # Validating the URL of the current web page
     url = driver.current_url
-    if link == My.qa_web_link:
+    if link == My.Testing_Env_EN:
         assert 'https://www.canada411.ca/' in url
     else:
         assert 'https://www.fr.canada411.ca/' in url
@@ -29,11 +29,11 @@ def testing_people_search():
         """
         >> This function executes the steps of the test case
         """
-        link = My.qa_web_link
+        link = My.Testing_Env_EN
         My.search_merchant_page(driver, link)
         validate_people_search(link)
         print('----------')
-        link = My.qa_fr_web_link
+        link = My.Testing_Env_FR
         My.search_merchant_page(driver, link)
         validate_people_search(link)
         driver.quit()

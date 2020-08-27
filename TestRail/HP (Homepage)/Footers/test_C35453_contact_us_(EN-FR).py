@@ -41,11 +41,11 @@ def test_contact_us():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    link = My.qa_web_link
+    link = My.Testing_Env_EN
     My.search_merchant_page(driver, link)
     contact_us(link)
     print('----------')
-    link = My.qa_fr_web_link
+    link = My.Testing_Env_FR
     My.search_merchant_page(driver, link)
     contact_us(link)
     driver.quit()

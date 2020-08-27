@@ -22,13 +22,13 @@ def partners(link):
         # Validating the URL of the current web page depending on the count
         url = driver.current_url
         if count == 1:
-            if link == My.qa_web_link:
+            if link == My.Testing_Env_EN:
                 assert "https://www.canada411.ca/" in url
             else:
                 assert "https://www.fr.canada411.ca/" in url
 
         else:
-            if link == My.qa_web_link:
+            if link == My.Testing_Env_EN:
                 assert "https://www.canpages.ca/" in url
             else:
                 assert "https://www.canpages.ca/fr/" in url
@@ -36,15 +36,16 @@ def partners(link):
         count += 1
         driver.back()
 
+
 def testing_partners():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    link = My.qa_web_link
+    link = My.Testing_Env_EN
     My.search_merchant_page(driver, link)
     partners(link)
     print('----------')
-    link = My.qa_fr_web_link
+    link = My.Testing_Env_FR
     My.search_merchant_page(driver, link)
     partners(link)
     driver.quit()

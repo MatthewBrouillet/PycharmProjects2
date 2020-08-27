@@ -30,9 +30,9 @@ def test_tips_ideas_home_service_links():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    My.search_merchant_page(driver, My.qa_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_EN)
     tips_ideas_home_service_links()
     print('----------')
-    My.search_merchant_page(driver, My.qa_fr_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_FR)
     tips_ideas_home_service_links()
     driver.quit()

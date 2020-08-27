@@ -33,6 +33,6 @@ def testing_has_gas_prices():
     """
     >> This function executes the steps of the test case
     """
-    My.search_merchant_page(driver, My.qa_web_link + "/bus/Quebec/Saint-Laurent/Les-Petroles-Crevier-Inc/2483297")
+    My.search_merchant_page(driver, My.Testing_Env_EN + "/bus/Quebec/Saint-Laurent/Les-Petroles-Crevier-Inc/2483297")
     has_gas_prices()
     driver.quit()

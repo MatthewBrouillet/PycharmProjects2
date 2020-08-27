@@ -22,7 +22,7 @@ def popular_cities(link):
 
         # Validating the URL of the current web page depending on the count
         url = driver.current_url
-        if link == My.qa_web_link:
+        if link == My.Testing_Env_EN:
             if count == 1:
                 assert link + "/locations/Alberta/Calgary" in url
 
@@ -42,7 +42,7 @@ def popular_cities(link):
                 assert link + "/locations/Manitoba/Winnipeg" in url
 
             elif count == 7:
-                if link == My.qa_web_link:
+                if link == My.Testing_Env_EN:
                     assert link + "/locations/British-Columbia/Vancouver" in url
                 else:
                     assert link + "/locations/Colombie-Britannique/Vancouver" in url
@@ -59,15 +59,16 @@ def popular_cities(link):
         count += 1
         driver.back()
 
+
 def testing_popular_cities():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    link = My.qa_web_link
+    link = My.Testing_Env_EN
     My.search_merchant_page(driver, link)
     popular_cities(link)
     print('----------')
-    link = My.qa_fr_web_link
+    link = My.Testing_Env_FR
     My.search_merchant_page(driver, link)
     popular_cities(link)
     driver.quit()

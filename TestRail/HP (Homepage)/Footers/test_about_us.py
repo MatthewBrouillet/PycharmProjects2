@@ -61,11 +61,12 @@ def quick_links_about_us(link):
 
         count += 1
 
+
 def testing_quick_links_about_us():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    link = My.qa_web_link
+    link = My.Testing_Env_EN
     My.search_merchant_page(driver, link)
     quick_links_about_us(link)
     driver.quit()

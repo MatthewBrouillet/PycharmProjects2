@@ -29,7 +29,7 @@ def tips_ideas_grocery_view_more(link):
 
     # Validating the URL of the current web page
     url = driver.current_url
-    if link == My.qa_web_link:
+    if link == My.Testing_Env_EN:
         assert link + "/tips/cat/food-beverage/grocery-tips/" in url
     else:
         assert link + "/trucs/cat/aliments-boissons/epicerie/" in url
@@ -39,11 +39,11 @@ def test_tips_ideas_grocery_view_more():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    link = My.qa_web_link
+    link = My.Testing_Env_EN
     My.search_merchant_page(driver, link)
     tips_ideas_grocery_view_more(link)
     print('----------')
-    link = My.qa_fr_web_link
+    link = My.Testing_Env_FR
     My.search_merchant_page(driver, link)
     tips_ideas_grocery_view_more(link)
     driver.quit()

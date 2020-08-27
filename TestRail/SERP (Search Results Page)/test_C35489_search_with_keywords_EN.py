@@ -49,6 +49,6 @@ def testing_lawyers():
     """
     >> This function will execute the test case, and takes a link, a keyword and a location as parameters
     """
-    My.search_merchant_param(driver, My.qa_web_link, "lawyers", "montreal")
+    My.search_merchant_param(driver, My.Testing_Env_EN, "lawyers", "montreal")
     is_valid_search()
     driver.quit()

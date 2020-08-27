@@ -31,10 +31,10 @@ def test_media_solutions_toggle():
     >> This function executes the steps of the test case
     """
     link = My.corporate_web_link
-    My.search_merchant_page(driver, My.qa_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_EN)
     media_solutions_toggle(link)
     print('----------')
     link = My.entreprise_web_link
-    My.search_merchant_page(driver, My.qa_fr_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_FR)
     media_solutions_toggle(link)
     driver.quit()

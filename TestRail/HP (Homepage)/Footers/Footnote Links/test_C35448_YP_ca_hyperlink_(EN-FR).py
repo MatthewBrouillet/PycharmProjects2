@@ -30,10 +30,10 @@ def test_ypca_toggle():
     >> This function executes the steps of the test case
     """
     link = My.yp_web_link
-    My.search_merchant_page(driver, My.qa_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_EN)
     ypca_toggle(link)
     print('----------')
     link = My.pj_web_link
-    My.search_merchant_page(driver, My.qa_fr_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_FR)
     ypca_toggle(link)
     driver.quit()

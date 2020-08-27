@@ -48,7 +48,7 @@ def testing_delete_previous_search():
     """
     >> This function executes the steps of the test case
     """
-    link = My.qa_web_link
+    link = My.Testing_Env_EN
     My.search_merchant_page(driver, link)
     delete_previous_search(link)
     driver.quit()

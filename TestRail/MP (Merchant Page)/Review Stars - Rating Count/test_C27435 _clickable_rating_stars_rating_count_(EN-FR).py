@@ -36,9 +36,9 @@ def testing_review_stars_rating_count():
     """
     >> This function executes the steps of the test case
     """
-    My.search_merchant_page(driver, My.qa_web_link + "/bus/Quebec/Montreal/Chalet-Bar-B-Q/3391918.html")
+    My.search_merchant_page(driver, My.Testing_Env_EN + "/bus/Quebec/Montreal/Chalet-Bar-B-Q/3391918.html")
     review_stars_rating_count()
     print('----------')
-    My.search_merchant_page(driver, My.qa_fr_web_link + "/bus/Quebec/Montreal/Chalet-Bar-B-Q/3391918.html")
+    My.search_merchant_page(driver, My.Testing_Env_FR + "/bus/Quebec/Montreal/Chalet-Bar-B-Q/3391918.html")
     review_stars_rating_count()
     driver.quit()

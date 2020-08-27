@@ -40,11 +40,11 @@ def testing_cursor_default_back():
     """
     >> This function executes the steps of the test case
     """
-    link = My.qa_web_link
+    link = My.Testing_Env_EN
     My.search_merchant_page(driver, link)
     cursor_default_back(link)
     print('----------')
-    link = My.qa_fr_web_link
+    link = My.Testing_Env_FR
     My.search_merchant_page(driver, link)
     cursor_default_back(link)
     driver.quit()
