@@ -45,8 +45,8 @@ def lang_toggle(link_FR, link_EN):
 
 
 def testing_lang_toggle():
-    link = My.c411_qa_web_link
-    link_FR = My.c411_fr_qa_web_link
+    link = My.Testing_Env_c411_EN
+    link_FR = My.Testing_Env_c411_FR
     link_EN = 'http://www.qa.ui.mtl.canada411.ca/'
     My.search_merchant_page(driver, link)
     lang_toggle(link_FR, link_EN)

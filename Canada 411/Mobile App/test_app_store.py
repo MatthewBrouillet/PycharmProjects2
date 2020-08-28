@@ -27,6 +27,6 @@ def app_store():
 
 
 def test_app_store():
-    My.search_merchant_page(driver, My.c411_qa_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_c411_EN)
     app_store()
     driver.quit()

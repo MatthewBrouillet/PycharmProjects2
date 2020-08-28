@@ -38,7 +38,7 @@ def test_browse_people_by_name():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    link = My.c411_qa_web_link
+    link = My.Testing_Env_c411_EN
     My.search_merchant_page(driver, link)
     browse_people_by_name(link)
     driver.quit()

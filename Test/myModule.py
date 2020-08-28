@@ -20,6 +20,8 @@ global yp_web_link, qa_web_link, pj_web_link, c411_web_link, c411_fr_web_link, c
 
 Testing_Env_EN = "https://qa-ui-mtl.yellowpages.ca"
 Testing_Env_FR = "https://www.qa-ui-mtl.pagesjaunes.ca"
+Testing_Env_c411_EN = "https://www.qa.ui.mtl.canada411.ca/"
+Testing_Env_c411_FR = "http://www.fr.qa.ui.mtl.canada411.ca/"
 
 """
 >> QA ENV

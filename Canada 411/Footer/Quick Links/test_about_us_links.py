@@ -48,7 +48,7 @@ def test_about_us_quick_links():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    link = My.c411_qa_web_link
+    link = My.Testing_Env_c411_EN
     My.search_merchant_page(driver, link)
     about_us_quick_links(link)
     driver.quit()

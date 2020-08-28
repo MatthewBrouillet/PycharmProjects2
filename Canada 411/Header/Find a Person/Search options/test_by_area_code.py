@@ -34,7 +34,7 @@ def by_area_code_link(link):
 
 
 def testing_by_area_code_link():
-    link = My.c411_qa_web_link
+    link = My.Testing_Env_c411_EN
     My.search_merchant_page(driver, link)
     by_area_code_link(link)
     driver.quit()

@@ -34,7 +34,7 @@ def direction_search(link):
 
 
 def testing_direction_search():
-    link = My.c411_qa_web_link
+    link = My.Testing_Env_c411_EN
     My.search_merchant_page(driver, link)
     direction_search(link)
     driver.quit()

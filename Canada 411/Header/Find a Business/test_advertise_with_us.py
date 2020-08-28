@@ -26,6 +26,6 @@ def advertise_with_us():
 
 
 def testing_advertise_with_us():
-    My.search_merchant_page(driver, My.c411_qa_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_c411_EN)
     advertise_with_us()
     driver.quit()

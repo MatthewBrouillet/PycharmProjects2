@@ -20,6 +20,6 @@ def log_in_facebook():
 
 
 def test_log_in_facebook():
-    My.search_merchant_page(driver, My.c411_qa_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_c411_EN)
     log_in_facebook()
     driver.quit()

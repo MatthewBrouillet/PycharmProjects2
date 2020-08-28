@@ -33,6 +33,6 @@ def by_category_link():
 
 
 def test_by_category_link():
-    My.search_merchant_page(driver, My.c411_qa_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_c411_EN)
     by_category_link()
     driver.quit()

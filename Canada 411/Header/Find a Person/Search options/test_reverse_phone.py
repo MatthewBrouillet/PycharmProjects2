@@ -34,7 +34,7 @@ def reverse_phone_link(link):
 
 
 def testing_reverse_phone_link():
-    link = My.c411_qa_web_link
+    link = My.Testing_Env_c411_EN
     My.search_merchant_page(driver, link)
     reverse_phone_link(link)
     driver.quit()

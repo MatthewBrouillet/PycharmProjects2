@@ -25,7 +25,7 @@ def home_button(link):
 
 
 def test_home_button():
-    link = My.c411_qa_web_link
+    link = My.Testing_Env_c411_EN
     My.search_merchant_page(driver, link)
     home_button(link)
     driver.quit()

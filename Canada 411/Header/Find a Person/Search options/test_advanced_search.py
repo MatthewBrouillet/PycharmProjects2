@@ -34,7 +34,7 @@ def advanced_search_link(link):
 
 
 def testing_advanced_search_link():
-    link = My.c411_qa_web_link
+    link = My.Testing_Env_c411_EN
     My.search_merchant_page(driver, link)
     advanced_search_link(link)
     driver.quit()

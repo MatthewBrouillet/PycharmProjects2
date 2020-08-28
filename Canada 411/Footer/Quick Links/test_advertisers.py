@@ -28,6 +28,6 @@ def testing_advertisers_quick_links():
     """
     >> This function will execute the test case, and takes a link as a parameter
     """
-    My.search_merchant_page(driver, My.c411_qa_web_link)
+    My.search_merchant_page(driver, My.Testing_Env_c411_EN)
     advertisers_quick_links()
     driver.quit()
